@@ -16,4 +16,8 @@ style    | code-style related (adding line breaks, removing whitespace, etc.)
 
 Activate virtualenv: `source env/bin/activate`
 
+Freeze current state: `pip freeze > requirements.txt`
+
+Install packages: `pip install -r requirements.txt`
+
 Deactivate virtualenv: `deactivate`

@@ -1,5 +1,5 @@
 import unittest
-from contains_dupliate_ii import contains_nearby_duplicate
+from contains_duplicate_ii import contains_nearby_duplicate
 
 
 class TestContainsDuplicateII(unittest.TestCase):

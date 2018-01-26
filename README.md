@@ -22,4 +22,8 @@ Install packages: `pip install -r requirements.txt`
 
 Deactivate virtualenv: `deactivate`
 
-Run tests: `python -m unittest <path-to-file>`
+Run tests:
+
+`cd <top-level-directory>` e.g. `cd toy-problem-collection/algorithms/arrays`
+
+`python -m unittest tests/<module-name>`

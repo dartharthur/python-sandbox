@@ -7,31 +7,27 @@ def longest_unique_substring(s):
   :type s: str
   :rtype: int
   """
-  allSubstrings = []
-  longest = 0
+  longest = ''
   for i in range(len(s)):
-    batch = findSubstrings(s[i:])
-    allSubstrings += batch[0]
-    if len(batch[1]) > longest:
-      longest = len(batch[1])
-  print('here', longest)
-  return longest
+    longestSoFar = check_substrings(s[i:])
+    if len(longestSoFar) > len(longest):
+      longest = longestSoFar
+  print('Longest substring is', longest)
+  return len(longest)
 
-def findSubstrings(s):
-  """Given a string, find all of the substrings without repeating characters."""
+def check_substrings(s):
+  """Given a substring of s, find the length of the longest substring without repeating characters."""
 
   """
   :type s: str
-  :rtype: List[str]
+  :rtype: int
   """
-  substrings = []
   longest = ''
   for i in range(len(s)):
     if s[i] not in s[:i]:
       substring = s[:i + 1]
-      substrings.append(substring)
       if len(substring) > len(longest):
         longest = substring
     else:
-      return (substrings, longest)
-  return (substrings, longest)
+      return longest
+  return longest

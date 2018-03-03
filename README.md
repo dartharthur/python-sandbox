@@ -14,14 +14,15 @@ test     | adds a test
 refactor | refactoring-related (DRY-up some parts of the code)
 style    | code-style related (adding line breaks, removing whitespace, etc.)
 ```
+Cloning down for first time: `virtualenv venv`
 
-Activate virtualenv: `source env/bin/activate`
+Install packages: `pip3 install -r requirements.txt`
 
-Freeze current state: `pip freeze > requirements.txt`
-
-Install packages: `pip install -r requirements.txt`
+Activate virtualenv: `source env/bin/activate` or `source venv/bin/activate`
 
 Deactivate virtualenv: `deactivate`
+
+Freeze current state: `pip freeze > requirements.txt`
 
 Run tests:
 

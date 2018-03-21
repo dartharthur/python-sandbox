@@ -19,12 +19,16 @@ def max_profit(prices):
     else:
       minPriceDay = 0
       maxPriceDay = 1
+    
+    maxProfitSoFar = prices[maxPriceDay] - prices[minPriceDay]
 
     for i, price in enumerate(prices[2:], 2):
       if price < prices[minPriceDay]:
+        maxProfitSoFar = max(maxProfitSoFar, prices[maxPriceDay] - prices[minPriceDay])
         minPriceDay = i
         maxPriceDay = i
       elif price > prices[maxPriceDay]:
         maxPriceDay = i
+        maxProfitSoFar = max(maxProfitSoFar, prices[maxPriceDay] - prices[minPriceDay])
     
-    return prices[maxPriceDay] - prices[minPriceDay]
+    return maxProfitSoFar

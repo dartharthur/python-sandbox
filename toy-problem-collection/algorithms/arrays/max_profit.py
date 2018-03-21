@@ -11,16 +11,19 @@ def max_profit(prices):
     :type prices: List[int]
     :rtype: int
     """
-    maxPriceDay = None
-    minPriceDay = None
+    if len(prices) < 2:
+      return 0
+    elif prices[0] > prices[1]:
+      minPriceDay = 1
+      maxPriceDay = 1
+    else:
+      minPriceDay = 0
+      maxPriceDay = 1
 
-    for i, price in enumerate(prices):
-      if not minPriceDay:
+    for i, price in enumerate(prices[2:], 2):
+      if price < prices[minPriceDay]:
         minPriceDay = i
-      elif not maxPriceDay:
         maxPriceDay = i
-      elif price < prices[minPriceDay]:
-        minPriceDay = i
       elif price > prices[maxPriceDay]:
         maxPriceDay = i
     

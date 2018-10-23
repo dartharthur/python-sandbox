@@ -1,4 +1,5 @@
 import unittest
+
 from max_profit import max_profit
 
 

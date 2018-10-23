@@ -22,5 +22,5 @@ style    | code-style related (adding line breaks, removing whitespace, etc.)
 - Deactivate virtualenv: `deactivate`
 
 Run tests:
-- `cd <top-level-directory>` e.g. `cd algorithms/arrays`
-- `python -m unittest tests/<module-name>`
+- `cd <problem-directory>` e.g. `cd algorithms/two-sum`
+- `python -m unittest <test-module-name>` e.g. `python -m unittest test_two_sum.py`

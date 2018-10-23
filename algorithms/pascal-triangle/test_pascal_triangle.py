@@ -1,4 +1,5 @@
 import unittest
+
 from pascal_triangle import generate_triangle, generate_row
 
 

@@ -1,4 +1,5 @@
 import unittest
+
 from longest_unique_substring import longest_unique_substring
 
 

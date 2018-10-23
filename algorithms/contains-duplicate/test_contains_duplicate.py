@@ -1,4 +1,5 @@
 import unittest
+
 from contains_duplicate import contains_duplicate
 
 

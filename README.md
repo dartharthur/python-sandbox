@@ -1,6 +1,6 @@
-# Toy Problems
+# Python Sandbox
 
-Collection of toy problems written in Python.
+Collection of notes, toy problems, and spikes written in Python.
 
 Commit legend:
 
@@ -15,8 +15,6 @@ refactor | refactoring-related (DRY-up some parts of the code)
 style    | code-style related (adding line breaks, removing whitespace, etc.)
 ```
 
-- Cloning down for first time: `virtualenv env`
-- Activate virtualenv: `source env/bin/activate`
 - Install packages: `pip install -r requirements.txt`
 - Freeze current state: `pip freeze > requirements.txt`
 - Deactivate virtualenv: `deactivate`
